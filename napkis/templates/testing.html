@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>make a menu item</h1>
+<div>
+    <form action="/add/menuitem/" method="post">
+    {{form}}
+    <input type="hidden" name="testing" value="True" >
+    <input type="submit" >
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+        {% for m in menus %}
+        <tr id="menuitem{{m.pk}}">
+            <td>{{m.pk}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.description}}</td>
+            <td>${{m.price}}</td>
+            <td>{{m.date}}</td>
+            <td>{{m.meal}}</td>
+        </tr>
+        {% endfor %}

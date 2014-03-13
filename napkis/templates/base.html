@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Napkis</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+        <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+        <script src="http://184.173.103.51:10705/socket.io/socket.io.js"></script> {# websocket #}
+        <script src="{% static 'settings/settings.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+    <div id="siteWrapper">
+        <div class="navbar navbar-inverse navbar-top container-fluid" id="header">
+            <div class="navbar-inner container">
+                <a class="navbar-brand text-center " href="/">
+                    <h3 class="fright abs right2" id="soon">Coming soon . . .</h3>
+                    <h1 class="text-center color0">Napkis</h1>
+                </a>
+            </div>
+        </div>
+        <div class="navbar fixed level2" id="sideBar" >
+            <ul class="nav navbar-nav">
+                <li class="hover"><a href="/">Home</a></li>
+                <li class="hover"><a href="/menu">The Menu</a></li>
+            </ul>
+        </div>
+        
+        {% block content %}   {% endblock %}
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">
+            Contact the makers.
+            <a href="mailto:conorpp@vt.edu"> Conor Patrick</a>
+            <a href="mailto:jjyacovelli@gmail.com">Jacob Yacovelli</a>
+            <a href="mailto:acd1797@vt.edu">Alex Derieux</a>
+            <a href="mailto:clantonf@vt.edu">Fonte Clanton</a>
+        </p>
+      </div>
+    </div>
+    </body>
+</html>

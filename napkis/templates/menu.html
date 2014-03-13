@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>What's on the menu?</h2>
+    <table class="table table-striped" id="menuitems">
+      <tbody>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Date</th>
+        <th>Meal</th>
+        {% for m in menus %}
+        <tr>
+            <td>{{m.pk}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.description}}</td>
+            <td>${{m.price}}</td>
+            <td>{{m.date}}</td>
+            <td>{{m.meal}}</td>
+        </tr>
+      
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

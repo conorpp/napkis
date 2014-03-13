@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+<div class="carousel ">
+    <img src="{% static 'images/napkisicon.png' %}" class="img-rounded img fright" id="logoPic">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1><span class="glyphicon glyphicon-edit mar5"></span>What is Napkis?</h1>
+                <p>
+                    One day while we were dickering around in the lab, we found out that it was
+                possbile to make buttons from paper.  And it's not even that hard.
+                </p>
+                <p>
+                So we've
+                implemented a mobile app that takes orders from areas a user touches on a piece of paper.
+                So the next time you go to a resturant, you just have to touch what you want on the
+                menu to order.  No expensive touch screens or waiting for busy waiters.  After confirming
+                your order, the cooks of the restaurant will be notified on their mobile device
+                and start on the orders immediately.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h1 ><span class="glyphicon glyphicon-edit mar5"></span> Why would anyone use this? </h1>
+                <p>We believe restaurants could benefit from changing things up.
+                Right now about 99% of restaurants follow these steps:
+                <ul>
+                    <li>New people walk in and grab a table</li>
+                    <li>They wait for the waiter</li>
+                    <li>The waiter has to serve others and eventually ask what the new people want to drink</li>
+                    <li>The waiter serves others and grabs the drinks. </li>
+                    <li>The waiter then asks new people if they are ready to order</li>
+                </ul>
+                Let's stop there.  As you can see, a lot is dependent on the waiter.  We
+                want to offer a free service for restaurants to offer a flexible method
+                to enable communication between the chefs and the customers.
+                </p>
+                <p>All you have to do is touch a menu.  No touch screens needed.</p>
+                <p class="fs12 bold">By doing this,
+                    <ul class="fs12 bold">
+                        <li>Waiters get relieved of stress </li>
+                        <li>Customers get served faster</li>
+                        <li>Restaurants save money</li>
+                    </ul>
+                </p>
+                <p>What more could you ask for?</p>
+            </div>
+            <div class="col-md-4">
+                <h1 ><span class="glyphicon glyphicon-edit mar5"></span> How does it work? </h1>
+                <p>
+                    As it turns out, our hands have capacitive charges on them.  Always.
+                    That means you are always distributing a charge whenever you touch something.
+                    Usually it's very small and you'd never notice.
+                </p>
+                <p>
+                    And we found you can move that charge around using something like
+                    simple pencil graphite.  This means you can easily hook up a small
+                    microchip to drawings on paper and check if any charges are being
+                    distributed.  Or in our case, being touched.
+                </p>
+                <p>
+                    So our application allows restaurants to draw (or print) out any menu 
+                    and our little, custom made microchip will sync it with out mobile app service.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h1 ><span class="glyphicon glyphicon-edit mar5"></span> Where do I get Napkis? </h1>
+                <p>
+                    We have just begun the developing for Napkis and we are very excited about it.
+                    A lot of progress has been made and we are almost finished with out Beta.
+                    Check out the Google Play store to see the application.  Search 'Napkis' and
+                    we should be the first hit (once we upload our application which will be very soon).
+                </p>
+                <p>
+                    Check out our custom made microchip and example menu <a href="/example">here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
